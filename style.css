@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.container {
+  width: 30%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.blocs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  background-color: black;
+  min-height: 100%;
+  width: 100%;
+}
+.blocs div[class^="bloc"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+.hidden {
+  display: none;
+}
+.blocs > div {
+  background-color: white;
+}
+button {
+  padding: 10px;
+  border: 0px solid;
+  border-radius: 8px;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+}
+.winner {
+  font-size: 50px;
+  font-weight: bold;
+}

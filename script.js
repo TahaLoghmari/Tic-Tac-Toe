@@ -60,6 +60,11 @@ function CheckWinner()
         winner.innerHTML = ( board[7] == "x" ? "Player 1 (x)" : "Player2 (o) ") + " Wins!" ;
         Reset();
     }  
+    else if ( board[4] != null && ( board[4] == board[5] && board[5] == board[6] || ( board[2] == board[5] && board[5] == board[8] ) ) )
+    {
+        winner.innerHTML = ( board[5] == "x" ? "Player 1 (x)" : "Player2 (o) ") + " Wins!" ;
+        Reset();
+    }
 }
 blocs.forEach( (bloc) => 
 {
